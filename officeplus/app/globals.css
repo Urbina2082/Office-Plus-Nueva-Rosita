@@ -1,9 +1,54 @@
+
 @import "tailwindcss";
 
-:root {
-  
+@theme {
+  --color-blue-but: rgb(5, 24, 245);
+  --color-bac: #311b92;
+  --background-image-gradient-red: linear-gradient(90deg, #4a00e0, #ff3c3c);
+  --color-zures: #1a0958;
+}
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
-body {
-  
+* {
+  box-sizing: border-box;
+}
+
+/* BORDES */
+.card-gradient-border {
+  border: 2px solid transparent;
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(#ffffff, #ffffff),
+    linear-gradient(135deg, #5b21b6, #7c3aed, #ec4899);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 3rem;
+}
+
+/* SOMBRAS */
+.sombra {
+  box-shadow: 5px 5px 10px 10px #00000030;
+}
+
+.somSe {
+  box-shadow: 3px 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* FONDO */
+.bg-mesh {
+  background-image:
+    radial-gradient(at 10% 45%, hsla(234, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(271, 91%, 52%, 1) 0px, transparent 50%),
+    radial-gradient(at 85% 85%, hsla(339, 100%, 55%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(232, 100%, 35%, 1) 0px, transparent 50%),
+    radial-gradient(at 90% 15%, hsla(340, 80%, 65%, 0.8) 0px, transparent 50%);
+}
+
+.reds {
+  background-image: linear-gradient(90deg, #f24c4c, #f41c1c);
 }
